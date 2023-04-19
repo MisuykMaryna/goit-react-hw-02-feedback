@@ -11,21 +11,21 @@ export class App extends Component {
     bad: 0,
   };
   
-  // onLeaveFeedback = feedback => {
-  //   this.setState(prevState => {
-  //     return {
-  //       [feedback]: prevState[feedback] + 1,
-  //     };
-  //   });
-  // };
-//    countTotalFeedback = () => {
-//     const { good, neutral, bad } = this.state;
-//     return good + neutral + bad;
-//   };
+  onLeaveFeedback = feedback => {
+    this.setState(prevState => {
+      return {
+        [feedback]: prevState[feedback] + 1,
+      };
+    });
+  };
+   countTotalFeedback = () => {
+    const { good, neutral, bad } = this.state;
+    return good + neutral + bad;
+  };
 
-//  countPositiveFeedbackPercentage = total => {
-//     return Math.round((this.state.good / total) * 100);
-//   };
+ countPositiveFeedbackPercentage = () => {
+    return Math.round((this.state.good /this.countTotalFeedback()) * 100) || 0;
+  };
 
   render() {
     const { good, neutral, bad } = this.state;

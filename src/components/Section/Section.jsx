@@ -1,12 +1,14 @@
 
 import PropTypes from 'prop-types';
 
-export const Section = ({ title, children }) => (
-  <Section>
-    <h2>{title}</h2>
-    {children}
-  </Section>
-);
+export const Section = ({ title, children }) => {
+  return (
+    <section>
+      <h1>{title}</h1>
+      {children}
+    </section>
+  );
+};
 
 Section.prototype = {
   title: PropTypes.string,
