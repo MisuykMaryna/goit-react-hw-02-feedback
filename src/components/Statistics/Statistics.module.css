@@ -1,0 +1,27 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    box-shadow: 0 0 10px #c6cccced;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #524a4d;
+}
+
+.statsList {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+
+
